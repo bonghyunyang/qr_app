@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리베라빗 공항사무실 QR CODE 페이지</title>
+
+    <meta property="og:image"
+        content="https://user-images.githubusercontent.com/60928021/113663562-383b0000-96e5-11eb-8b5c-47e28a335a06.png">
+    <meta property="og:title" content="리베라빗 QR CODE">
+    <meta property="og:description" content="항공지원센터 출입 QR CODE 페이지">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        body {
+            background-color: ivory;
+        }
+
+        .top-image {
+            background-color: white;
+
+            width: 300px;
+            height: 300px;
+
+            background-image: url('https://user-images.githubusercontent.com/60928021/113663562-383b0000-96e5-11eb-8b5c-47e28a335a06.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 50px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            text-align: center;
+            color: black;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .from {
+            text-align: center;
+            margin-bottom: 0px;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 760px) {
+
+            .top-image {
+                width: 200px;
+                height: 200px;
+                margin: 10px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+            
+            .bottom-image {
+            background-color: white;
+
+            width: 50px;
+            height: 50px;
+
+            background-image: url('https://user-images.githubusercontent.com/60928021/113663562-383b0000-96e5-11eb-8b5c-47e28a335a06.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 30px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+        .from {
+            text-align: center;
+            margin-bottom: 0px;
+            font-size: 15px;
+        }
+        }
+    </style>
+
+    <script>
+        function go_poty() {
+            window.location.href = 'http://liberabit.co.kr/'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="qr_box">
+        <div class="top-image"></div>
+        <h1>항공지원센터 출입 QR 코드 <br /> (2021.04.01~)</h1>
+        <p class="from">본 QR코드는 분기별로 변경됩니다.</p>
+        <div class="bottom-image" onclick="go_poty()"></div>
+        </div>
+    </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.3.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.3.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</html>
